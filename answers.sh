@@ -1,0 +1,7 @@
+"SELECT Name FROM students"
+"SELECT*FROM students WHERE Age>30"
+"SELECT Name FROM students WHERE Age=30 AND Gender='Female'"
+"SELECT Points FROM students WHERE Name='Alex'"
+"INSERT INTO students (Name,Age,Gender,points) VALUES ("Souheir",22,"Female",5)"
+"UPDATE students SET Points=Points+1 WHERE Name='Bassma'"
+"UPDATE students SET Points=Points-1 WHERE Name='Alex'"
