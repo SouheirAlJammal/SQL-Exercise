@@ -35,3 +35,14 @@ WHERE companies.Date < '2000';"
 "SELECT DISTINCT companies.Name FROM employees
 INNER JOIN companies ON employees.Company=companies.ID 
 WHERE employees.Role='Graphic Designer';"
+
+"SELECT Name FROM students
+ WHERE points=(SELECT max(points) FROM students);"
+
+ "SELECT avg(points) FROM students;"
+
+ "SELECT count(*) FROM students WHERE Points=500;"
+
+ "SELECT Name FROM Students WHERE Name Like '%s%' ;"
+
+ "SELECT Name, Points FROM Students ORDER BY Points DESC ;"
