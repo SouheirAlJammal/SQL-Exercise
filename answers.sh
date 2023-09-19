@@ -22,3 +22,16 @@ SET Graduation='18/10/2020'
 WHERE Name='Layal';"
 
 "DELETE FROM students WHERE Name='Layal';"
+
+
+"SELECT Employees.Name, Companies.Name, Companies.Date FROM Employees
+INNER JOIN Companies ON Employees.company =companies.ID"
+
+"SELECT employees.Name FROM employees
+INNER JOIN companies ON employees.Company=companies.ID 
+WHERE companies.Date < '2000';"
+
+
+"SELECT DISTINCT companies.Name FROM employees
+INNER JOIN companies ON employees.Company=companies.ID 
+WHERE employees.Role='Graphic Designer';"
