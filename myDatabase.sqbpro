@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/souheir/SQL-Exercise/myDatabase.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1057"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,9:maingraduates"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">SELECT Name, Points FROM Students ORDER BY Points DESC ;</sql><sql name="carDealership.db.sql">BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS &quot;companies&quot; (
+	&quot;ID&quot;	INTEGER NOT NULL,
+	&quot;Name&quot;	TEXT NOT NULL UNIQUE,
+	&quot;Date&quot;	INTEGER NOT NULL,
+	PRIMARY KEY(&quot;ID&quot; AUTOINCREMENT)
+);
+CREATE TABLE IF NOT EXISTS &quot;employees&quot; (
+	&quot;ID&quot;	INTEGER NOT NULL,
+	&quot;Name&quot;	TEXT NOT NULL UNIQUE,
+	&quot;Role&quot;	TEXT NOT NULL,
+	&quot;Company&quot;	TEXT,
+	PRIMARY KEY(&quot;ID&quot; AUTOINCREMENT)
+);
+INSERT INTO &quot;companies&quot; VALUES (1,'Google',1998);
+INSERT INTO &quot;companies&quot; VALUES (2,'Facebook',2004);
+INSERT INTO &quot;companies&quot; VALUES (3,'Instagram',2010);
+INSERT INTO &quot;companies&quot; VALUES (4,'Snapchat',2011);
+INSERT INTO &quot;employees&quot; VALUES (1,'Marc','Software Engineer','Google');
+INSERT INTO &quot;employees&quot; VALUES (2,'Maria','Software Engineer','Google');
+INSERT INTO &quot;employees&quot; VALUES (3,'Alaa','Team Leader','Facebook');
+INSERT INTO &quot;employees&quot; VALUES (4,'Hala','Graphic Designer','Snapchat');
+COMMIT;
+</sql><current_tab id="1"/></tab_sql></sqlb_project>
